@@ -1,0 +1,20 @@
+[ 2025-01-19 13:16:20,789 ] root - INFO - Entered the start_data_ingestion method of TrainPipeline class
+[ 2025-01-19 13:16:20,789 ] root - INFO - Getting the data from URL
+[ 2025-01-19 13:16:20,789 ] root - INFO - Entered initiate_data_ingestion method of Data_Ingestion class
+[ 2025-01-19 13:16:20,789 ] root - INFO - Downloading data from https://drive.google.com/file/d/17vDLJrk4iYtysocirKNCDuDIOAsX0-17/view?usp=sharing into file artifacts/data_ingestion/data.zip
+[ 2025-01-19 13:16:25,774 ] root - INFO - Downloaded data from https://drive.google.com/file/d/17vDLJrk4iYtysocirKNCDuDIOAsX0-17/view?usp=sharing into file artifacts/data_ingestion/data.zip
+[ 2025-01-19 13:16:25,781 ] root - INFO - Extracting zip file: artifacts/data_ingestion/data.zip into dir: artifacts/data_ingestion/feature_store
+[ 2025-01-19 13:16:25,781 ] root - INFO - Exited initiate_data_ingestion method of Data_Ingestion class
+[ 2025-01-19 13:16:25,781 ] root - INFO - Data ingestion artifact: DataIngestionArtifact(data_zip_file_path='artifacts/data_ingestion/data.zip', feature_store_path='artifacts/data_ingestion/feature_store')
+[ 2025-01-19 13:16:25,781 ] root - INFO - Got the data from URL
+[ 2025-01-19 13:16:25,781 ] root - INFO - Exited the start_data_ingestion method of TrainPipeline class
+[ 2025-01-19 13:16:25,781 ] root - INFO - Entered the start_data_validation method of TrainPipeline class
+[ 2025-01-19 13:16:25,781 ] root - INFO - Entered initiate_data_validation method of DataValidation class
+[ 2025-01-19 13:16:25,783 ] root - INFO - Exited initiate_data_validation method of DataValidation class
+[ 2025-01-19 13:16:25,783 ] root - INFO - Data validation artifact: DataValidationArtifact(validation_status=True)
+[ 2025-01-19 13:16:25,783 ] root - INFO - Performed the data validation operation
+[ 2025-01-19 13:16:25,783 ] root - INFO - Exited the start_data_validation method of TrainPipeline class
+[ 2025-01-19 13:16:25,783 ] root - INFO - Entered initiate_model_trainer method of ModelTrainer class
+[ 2025-01-19 13:16:25,783 ] root - INFO - Unzipping data
+[ 2025-01-19 13:17:27,542 ] root - INFO - Exited initiate_model_trainer method of ModelTrainer class
+[ 2025-01-19 13:17:27,542 ] root - INFO - Model trainer artifact: ModelTrainerArtifact(trained_model_file_path='artifacts/model_trainer/best.pt')
